@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doosan BEARS</title>
+
+    <style>
+
+        @import url(baseStyle.css);
+        
+        section{
+            height: 75%;
+            width: 100%; 
+        }
+        #space{
+            padding-top: 3em;
+        }
+        #main{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        form{
+            font-size: 1.5em;
+        }
+        h1{
+            font-size: 3.5em;
+        }
+        h1:hover{
+            font-size: 5em;
+            font-weight: bolder;
+            color:#131230;
+            text-shadow:3px 3px 3px skyblue;
+        }
+        button{
+            font-size: 1.2em;
+        }
+        @keyframes buttonAni{
+            from{font-size: 120%; }
+            50%{font-size: 125%; right: 1px; top: 0.5px;}
+            to{font-size: 120%;}
+        }
+        button:hover{
+            position: relative;
+            animation-name: buttonAni;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+       
+    </style>
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <span></span>
+            <a href="main.html" target="_self"><img src="images/logo.png" alt="html" style="height: 150px;"></a>
+            <div>
+            <a href="introduce.html" target="_self">&nbsp;&nbsp;팀 소개&nbsp;&nbsp;</a>
+            <a href="players.html">선수단 소개&nbsp;&nbsp;</a>
+            <a href="https://www.koreabaseball.com/TeamRank/TeamRank.aspx" target="_blank">순위 보러가기&nbsp;&nbsp;</a>
+            <a href="schedule.html">경기 일정&nbsp;&nbsp;</a>
+            <a href="news.html">기사 보러가기&nbsp;&nbsp;</a>
+            <a href="support.html">응원하기&nbsp;&nbsp;</a>
+            <a href="ticket.html">티켓팅하기&nbsp;&nbsp;</a>
+            </div>
+        </nav>    
+    </header>
+
+    <section>
+        <div id="main">
+            <h1>이벤트 참가가 완료되었습니다!!</h1>
+
+            <div id="space"></div>
+            <form name="frm2" method="get" action="main.html" target="_self">
+            <button type="submit"style="height: 2em; width: 5em;">돌아가기</button>
+            </form>
+
+        </div>
+    </section>
+
+    <aside>
+        <a href="event.html">
+        <div id="event">
+        <h4>두산베어스</h4>
+        <h4>창단 40주년</h4>
+        <h4>기념 이벤트!</h4>
+        <br><br>
+        설문조사 참여하고<br>경품 받아가자!!
+        <br><br><br>
+        <img src="images/gift.png" alt="gift">
+        </div>
+        </a>
+    </aside>
+
+    <footer>
+        <div>
+        <p>폴리텍대학교 인공지능 소프트웨어과 2201110371 이재언</p>
+        </div>
+    </footer>
+
+</body>
+</html>

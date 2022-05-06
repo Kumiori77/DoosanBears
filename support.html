@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doosan BEARS</title>
+
+    <style>
+
+        @import url(baseStyle.css);
+        
+        section{
+            height: auto;
+            width: 100%; 
+        }
+        #space{
+            padding-top: 3em;
+        }
+        #space2{
+            display: inline-block;
+            width: 6em;
+        }
+        #main{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .main{
+            padding: 0% 10%;
+        }
+        form{
+            font-size: 1.5em;
+        }
+        input:focus, textarea:focus{
+            border: 5px solid #131230;
+        }
+        h1{
+            font-size: 3.5em;
+        }
+        h1:hover{
+            font-size: 5em;
+            font-weight: bolder;
+            color:#131230;
+            text-shadow:3px 3px 3px skyblue;
+        }
+        h3{
+            font-size: 2em;
+        }
+        h3:hover{
+            font-weight: bolder;
+            color:#131230;
+            text-shadow:3px 3px 5px skyblue;
+        }
+        span:hover{
+            font-weight: bolder;
+            color:#131230;
+            text-shadow:3px 3px 5px skyblue;
+        }
+        button{
+            font-size: 1.2em;
+        }
+        @keyframes buttonAni{
+            from{font-size: 120%; }
+            50%{font-size: 125%; right: 1px; top: 0.5px;}
+            to{font-size: 120%;}
+        }
+        button:hover{
+            position: relative;
+            animation-name: buttonAni;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <span></span>
+            <a href="main.html" target="_self"><img src="images/logo.png" alt="html" style="height: 150px;"></a>
+            <div>
+            <a href="introduce.html" target="_self">&nbsp;&nbsp;팀 소개&nbsp;&nbsp;</a>
+            <a href="players.html">선수단 소개&nbsp;&nbsp;</a>
+            <a href="https://www.koreabaseball.com/TeamRank/TeamRank.aspx" target="_blank">순위 보러가기&nbsp;&nbsp;</a>
+            <a href="schedule.html">경기 일정&nbsp;&nbsp;</a>
+            <a href="news.html">기사 보러가기&nbsp;&nbsp;</a>
+            <a href="support.html">응원하기&nbsp;&nbsp;</a>
+            <a href="ticket.html">티켓팅하기&nbsp;&nbsp;</a>
+            </div>
+        </nav>    
+    </header>
+
+    <section>
+        <div id="main">
+            <h1>응원 하기!!</h1>
+            <h3>응원 메시지를 입력해서 선수들에게 힘을 주세요!!</h3>
+            <div id="space"></div>
+        <form name ="frm" method="get" action="support2.html" target="_self">
+
+            <label><span>닉네임 : </span><input type="text"></label><br>
+            <div id="space"></div>
+            <span>성별 :</span> 
+            <label><span>남 </span><input type="radio" name="gender" value="1"></label>
+            <label><span>여 </span><input type="radio" name="gender" value="2"></label>
+            <div id="space"></div>
+            <label><span>응원할 선수 : </span><input type="input" list="player">
+                <datalist id="player">
+                    <option value="두산 베어스"></option>
+                    <option value="미란다"></option>
+                    <option value="최원준"></option>
+                    <option value="이영하"></option>
+                    <option value="스탁"></option>
+                    <option value="곽빈"></option>
+                    <option value="김강률"></option>
+                    <option value="홍건희"></option>
+                    <option value="임창민"></option>
+                    <option value="김명신"></option>
+                    <option value="최승용"></option>
+                    <option value="권휘"></option>
+                    <option value="장원준"></option>
+                    <option value="이형범"></option>
+                    <option value="박세혁"></option>
+                    <option value="장승현"></option>
+                    <option value="김재호"></option>
+                    <option value="오재원"></option>
+                    <option value="허경민"></option>
+                    <option value="페르난데스"></option>
+                    <option value="박계범"></option>
+                    <option value="강승호"></option>
+                    <option value="안재석"></option>
+                    <option value="정수빈"></option>
+                    <option value="김재환"></option>
+                    <option value="김인태"></option>
+                    <option value="조수행"></option>
+                    <option value="강진성"></option>
+                    <option value="안권수"></option>
+                </datalist>
+            </label><br>
+            <div id="space"></div>     
+
+            <label><span>응원 메시지</span><br>
+            <textarea cols="80" rows="20" placeholder="응원 메시지를 입력하세요!"></textarea></label>
+
+            <div id="space"></div>
+
+            <div id="space2"></div><button type="submit"style="height: 2em; width: 5em;">전송</button>
+
+        </form>
+        </div>
+
+        <div id="space"></div>
+        <div id="space"></div>
+    </section>
+
+    <aside>
+        <a href="event.html">
+        <div id="event">
+        <h4>두산베어스</h4>
+        <h4>창단 40주년</h4>
+        <h4>기념 이벤트!</h4>
+        <br><br>
+        설문조사 참여하고<br>경품 받아가자!!
+        <br><br><br>
+        <img src="images/gift.png" alt="gift">
+        </div>
+        </a>
+    </aside>
+
+    <footer>
+        <div>
+        <p>폴리텍대학교 인공지능 소프트웨어과 2201110371 이재언</p>
+        </div>
+    </footer>
+
+</body>
+</html>

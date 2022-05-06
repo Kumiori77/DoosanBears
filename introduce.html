@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doosan BEARS</title>
+
+    <style>
+
+        @import url(baseStyle.css);
+        
+        section{
+            height: auto;
+            width: auto; 
+        }
+        
+        #main{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        #menu{
+            background-color: #131230;
+            margin: 0%;
+        }
+
+        #menu li{
+            display: inline-block;
+            font-size: 1.8em;
+            padding: 1em 4em;
+            color: white;
+            align-items: center;
+        }
+        #menu a{
+            color: white;
+        }
+        #menu a:hover{
+            color:#ED1C24;
+            font-size: 1.4em;
+        }
+        .main{
+            padding: 0em 10%
+        }
+        h1{
+            font-size: 2em;
+        }
+        h3{
+            font-size: 1.7em;
+        }
+        #space{
+            padding-top: 10em;
+        }
+        #space2{
+            padding-top: 5em
+        }
+        p, li{
+            font-size: 1.5em;
+        }
+        section p:hover{
+            font-size: 1.7em;
+            font-weight: bolder;
+            color:#131230;
+            text-shadow:3px 3px 5px skyblue;
+        }
+        h3:hover{
+            font-size: 2.5em;
+            font-weight: bolder;
+            color:#131230;
+            text-shadow:3px 3px 5px skyblue;
+        }
+        #main h1:hover{
+            font-size: 3.5em;
+            font-weight: bolder;
+            color:#131230;
+            text-shadow:3px 3px 5px skyblue;
+        }
+        .history li:hover{
+            font-size: 2.5em;
+            font-weight: bolder;
+            color:#131230;
+            text-shadow:3px 3px 5px skyblue;
+        }
+        .main img:hover{
+            transform: scale(1.5, 1.5);
+            position: relative;
+            left: 15em
+        }
+
+        table, td{
+            border: 1px solid grey;
+            border-collapse: collapse;  
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <span></span>
+            <a href="main.html" target="_self"><img src="images/logo.png" alt="html" style="height: 150px;"></a>
+            <div>
+            <a href="introduce.html" target="_self">&nbsp;&nbsp;팀 소개&nbsp;&nbsp;</a>
+            <a href="players.html">선수단 소개&nbsp;&nbsp;</a>
+            <a href="https://www.koreabaseball.com/TeamRank/TeamRank.aspx" target="_blank">순위 보러가기&nbsp;&nbsp;</a>
+            <a href="schedule.html">경기 일정&nbsp;&nbsp;</a>
+            <a href="news.html">기사 보러가기&nbsp;&nbsp;</a>
+            <a href="support.html">응원하기&nbsp;&nbsp;</a>
+            <a href="ticket.html">티켓팅하기&nbsp;&nbsp;</a>
+            </div>
+        </nav> 
+    </header>
+
+    <section>
+        <div id="main">
+            <article class="main">
+            <ul id="menu">
+                <li><a href="#history">연혁</a></li>
+                <li><a href="#home">홈구장</a></li>
+                <li><a href="#logo">로고</a></li>
+            </ul>
+            </article>
+
+            <div id="space"></div>
+
+            <article class="main">
+            <h1 id="history">연혁</h3>
+            <ul class="history">
+                <li>1982.01.15 : OB 베어스 창단</li>
+                <li>1982.10.12 : 한국 시리즈 우승 (프로야구 원년 우승)</li>
+                <li>1985.03.30 : 서울(동대문구장)으로 연고지 변경</li>
+                <li>1986.03.29 : 잠실구장으로 홈구장 변경</li>
+                <li>1995.10.22 : 페넌트레이스, 한국 시리즈 통합 우승</li>
+                <li>1998.03 : 8개 구단 최초 단독 홈페이지 개설</li>
+                <li>1999.01.05 : 두산 베어스 로 팀명 변경</li>
+                <li>2001.10.28 : 한국 시리즈 우승</li>
+                <li>2010.03.15 : 아이폰용 구단 앱 개발</li>
+                <li>2011.06.13 : 안드로이드용 구단 앱 개발</li>
+                <li>2012.10.25 : 한국 서비스 품질지수 프로야구 1위 선정</li>
+                <li>2014.07.01 : 이천 베어스 파크 준공식</li>
+                <li>2014.09.07 : 한국 프로스포츠 사상 최초 6년 연속 홈관중 100만명 돌파</li>
+                <li>2015.10.31 : 한국 시리즈 우승</li>
+                <li>2016.10.08 : 역대 한 시즌 최다승 93승 달성</li>
+                <li>2016.11.02 : 페넌트레이스, 한국 시리즈 통합 우승</li>
+                <li>2019.10.26 : 페넌트레이스, 한국 시리즈 통합 우승</li>
+            </ul>
+            </article>
+
+            <div id="space"></div>
+
+            <article class="main">
+            <h1 id="home">홈구장</h3>
+            <p>두산베어스는 서울 잠실에 있는 잠실 구장을 홈으로 사용하고 있다. </p><br>
+
+            <table>
+                <tbody>
+                    <tr><td rowspan="2"><img src="images/homeground.png" alt="html" style="height: 500px;"></td>
+                        <td>
+                            <h3>1. 전광판</h3>
+                            <p>경기기록용 3색 전광판</p>
+                            <p>(14,080mm x 7.040mm)</p>
+                            <p>영상표출용 풀컬러 비디오 전광판</p>
+                            <p>(14,784mm x 9.856mm)</p>
+                        </td>
+                        <td>
+                            <h3>2. 출입문 10개</h3>
+                            <p>1층 : 7개 / 2층 3개</p>
+                        </td>
+                        <td>
+                            <h3>3. 조명탑</h3>
+                            <p>외야 전광판 좌우측 1개씩</p>
+                            <p>좌우 파울선상 1개씩</p>
+                            <p>본부상단 2개</p>
+                        </td></tr>
+                        <tr><td>
+                            <h3>4. 잔디가 없는 부분</h3>
+                            <p>투수 마운드 : 직경 8m 60cm</p>
+                            <p>웨이팅서클 : 직경 6m 50cm</p>
+                            <p>1,3루 파울선 : 폭 1m 40cm</p>
+                            <p>코치박스 : 길이 6m x 폭 3m</p>
+                            <p>내야 : 14m 80cm (유격수, 2루수 지역)<br>
+                            12m 80cm(2루 베이스 뒤)</p>
+                        </td>
+                        <td>
+                            <h3>5. 펜스 거리 및 높이</h3>
+                            <p>좌측펜스 : 100m</p>
+                            <p>우측펜스 : 100m</p>
+                            <p>중앙펜스 : 125m</p>
+                            <p>외야펜스 총 높이 : 2m 60cm</p>
+                            <p>내야그물망 높이 : 3m</p>
+                        </td>
+                        <td>
+                            <h3>6. 좌석 수</h3>
+                            <p>25,00석</p>
+                            <p>VIP석 : 264석</p>
+                            <p>테이블석 : 502석</p>
+                            <p>블루석 : 2,373</p>
+                            <p>레드석 : 6,399석</p>
+                            <p>네이비석 : 10,112석</p>
+                            <p>외야석 : 5,813석</p>
+                        </td></tr>
+                </tbody>
+            </table>
+            </article>
+
+            <div id="space"></div>
+
+            <article class="main">
+                <h1 id="logo">로고</h3>
+                <div>
+                <h3>엠블럼</h3>
+                <img src="images/emblem3.jpg" width="400em">
+                <p>
+                    과거 OB베어스 시절의 상징과도 같았던 빨간색과 짙은 남색은 1982년 국내 최초의 프로야구단이자 원년 우승을 이뤄낸 베어스의 역사와 전통에 대한 자부심과 긍지를 의미<br>
+                    'BEARS'라는 글자에 곡선을 배제, 승리를 위해서라면 그 어떤 것도 거칠 것이 없다는 베어스의 곧고 강렬한 집념과 투지를 강하게 표현<br>
+                    두산베어스의 역사성과 그에 대한 경의, 명문 강호 두산베어스로서의 긍지와 승리를 향한 집념 표현<br>
+                </p>
+                </div>
+                <div id="space2"></div>
+                <div>
+                <h3>로고</h3>
+                <img src="images/logo3.jpg" width="400em">
+                <p>
+                    1982년 창단한 대한민국 최초의 프로야구단으로서의 자부심과 원년 우승 명문 구단의 느낌을 살리기 위해 강렬한 색과 곧은 서체로 전통적이면서도 공격적이고 강인한 이미지를 표현<br>
+                    항상 정상을 향해 돌진하는 두산베어스의 곧은 의지를 천명하기 위한 강한 체력과 정신력을 담음<br>
+                    빨간색과 짙은 남색, 흰색 만을 이용하여 원년 팀에 대한 정통성을 유지하면서도 공격적인 야구를 표방하는 두산베어스의 팀 컬러에 걸맞는 강렬함을 강조
+                </p>
+                </div>
+                <div id="space2"></div>
+                <div>
+                <h3>심볼</h3>
+                <img src="images/symbol3.jpg" width="400em">
+                <p>
+                    두산(Doosan)을 상징하는 'D'자를 곧고 강하게 표현<br>
+                    프로야구 최초 창단과 원년도 우승을 자랑하는 명문 구단으로서의 자부심과 정통성을 표현<br>
+                    빨간색과 짙은 남색, 곧고 강한 서체를 사용하여 두산베어스의 승리를 향한 열정과 투지 표현
+                </p>
+                </div>
+                
+            </article>
+
+        </div>
+
+        <div id="space"></div>
+    </section>
+
+    <aside>
+        <a href="event.html">
+        <div id="event">
+        <h4>두산베어스</h4>
+        <h4>창단 40주년</h4>
+        <h4>기념 이벤트!</h4>
+        <br><br>
+        설문조사 참여하고<br>경품 받아가자!!
+        <br><br><br>
+        <img src="images/gift.png" alt="gift">
+        </div>
+        </a>
+    </aside>
+
+    <footer>
+        <div>
+        <p>폴리텍대학교 인공지능 소프트웨어과 2201110371 이재언</p>
+        </div>
+    </footer>
+
+</body>
+</html>
